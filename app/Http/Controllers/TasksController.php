@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Task;
 class TasksController extends Controller
 {
     /**
@@ -30,7 +30,7 @@ class TasksController extends Controller
     {
         $task = new Task;
 
-        return view('tasks.create', [
+        return view('Tasks.create', [
             'task' => $task,
         ]);
     }
@@ -62,7 +62,7 @@ class TasksController extends Controller
     {
         $task = Task::find($id);
 
-        return view('tasks.show', [
+        return view('Tasks.show', [
             'task' => $task,
         ]);
     }
@@ -78,7 +78,7 @@ class TasksController extends Controller
     {
         $task = Task::find($id);
 
-        return view('tasks.edit', [
+        return view('Tasks.edit', [
             'task' => $task,
         ]);
     }
