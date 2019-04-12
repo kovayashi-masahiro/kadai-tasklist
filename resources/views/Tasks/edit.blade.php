@@ -1,5 +1,3 @@
-resouces/views/Tasks/index.blade.php
-
 @extends('layouts.app')
 
 @section('content')
